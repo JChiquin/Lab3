@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { RegistroPage } from '../registro/registro';
 import { ModalController } from 'ionic-angular';
+
 @Component({
  selector: 'page-home',
  templateUrl: 'home.html'

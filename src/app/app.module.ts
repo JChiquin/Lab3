@@ -10,14 +10,15 @@ import { CatalogoPage } from '../pages/catalogo/catalogo';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RegistroPage } from '../pages/registro/registro';
-
+import { InicioPage } from '../pages/inicio/inicio';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
     CatalogoPage,
-    RegistroPage
+    RegistroPage,
+    InicioPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +30,8 @@ import { RegistroPage } from '../pages/registro/registro';
     HomePage,
     LoginPage,
     CatalogoPage,
-    RegistroPage
+    RegistroPage,
+    InicioPage
   ],
   providers: [
     StatusBar,

@@ -6,13 +6,26 @@
 -->
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Hello Ionic</ion-title>
+   
+    <ion-title>Bienvenido a MorrocoLibre</ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding>
+ <ion-slides pager>
+
+  <ion-slide style="background-color: green">
+    <h2>Somos el sitio numero 1 en venta de morrocoyas</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: blue">
+    <h2>Slide 2</h2>
+  </ion-slide>
+
+  <ion-slide style="background-color: red">
+    <h2>Slide 3</h2>
+  </ion-slide>
+
+</ion-slides>
 	<ion-list>
 		<ion-item>
 			<ion-label floating>Username</ion-label>
@@ -24,6 +37,9 @@
 		</ion-item>
 	</ion-list>
 	<div padding>
-		<button block ion-button (click)="showAlert()" >INICIAR SESIÓN</button>
+		<button block ion-button (click)="home()" >INICIAR SESIÓN</button>
 	</div> 
+ <div padding>
+  <button ion-button color="secondary" full (click)="registro()">Registrarse</button>
+  </div> 
 </ion-content>

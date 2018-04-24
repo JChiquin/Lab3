@@ -9,39 +9,56 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-title>Catalogo</ion-title>
   </ion-navbar>
+  <ion-searchbar ></ion-searchbar>
 </ion-header>
 
 
 <ion-content padding>
-	<ion-card>
+	<ion-card *ngFor="let p of publicaciones">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8>
+        <ion-item>
+          <ion-avatar item-start>
+            <img [src]="p.avatar">
+          </ion-avatar>
+          <h2>{{p.vendedor}}</h2>
+          <p>{{p.fecha}}</p>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4 text-right>
+        <ion-icon [name]="p.categoria" style="font-size: 60px"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <ion-item>
-    <ion-avatar item-start>
-      <img src="img/marty-avatar.png">
-    </ion-avatar>
-    <h2>Marty McFly</h2>
-    <p>November 5, 1955</p>
-  </ion-item>
-
-  <img src="img/advance-card-bttf.png">
+  <ion-slides pager>
+    <ion-slide *ngFor="let image of p.images">
+      <img [src]="image" class="slide-image">
+    </ion-slide>
+  </ion-slides>
 
   <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    <h1 text-center>{{p.title}}</h1>
+    <br>
+    <p>{{p.descripcion}}</p>
+    <br>
+    <h1><i><b>Bs. {{p.precio}}</b></i></h1>
   </ion-card-content>
 
   <ion-row>
     <ion-col>
       <button ion-button icon-left clear small>
         <ion-icon name="thumbs-up"></ion-icon>
-        <div>12 Likes</div>
+        <div>{{p.likes}} Likes</div>
       </button>
     </ion-col>
     <ion-col>
       <button ion-button icon-left clear small>
         <ion-icon name="text"></ion-icon>
-        <div>4 Comments</div>
+        <div>{{p.comentarios}} Comments</div>
       </button>
     </ion-col>
     <ion-col center text-center>
