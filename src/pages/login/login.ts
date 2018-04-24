@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild  } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { RegistroPage } from '../registro/registro';
 /**
  * Generated class for the LoginPage page.
  *
@@ -29,4 +31,11 @@ export class LoginPage {
     });
     alert.present();
   }
+
+  home(){
+  this.navCtrl.setRoot(HomePage);
+ }
+ registro(){
+  this.navCtrl.push(RegistroPage);
+ }
 }

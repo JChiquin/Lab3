@@ -17,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HomePage the root (or first) page
-  rootPage = HomePage;
+  rootPage = LoginPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
