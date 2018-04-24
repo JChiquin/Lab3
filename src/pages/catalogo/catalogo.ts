@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
+import { FiltrosPage } from '../filtros/filtros';
 
 /**
  * Generated class for the CatalogoPage page.
@@ -27,7 +29,7 @@ export class CatalogoPage {
     comentarios: number
   }>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController, public modalCtrl: ModalController ) {
     this.loadingCtrl.create({
       content: 'Por favor espere...',
       duration: 1000,
@@ -99,5 +101,11 @@ Trabajamos con los bancos: ...`,
   ionViewDidLoad() {
     console.log('ionViewDidLoad CatalogoPage');
   }
+
+  filtrosModal() {
+    let modal = this.modalCtrl.create(FiltrosPage);
+    modal.present();
+  }
+  
 
 }

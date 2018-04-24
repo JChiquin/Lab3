@@ -31,7 +31,6 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'Login', component: LoginPage },
       { title: 'Catalogo', component: CatalogoPage }
     ];
   }
@@ -50,5 +49,9 @@ export class MyApp {
     this.menu.close();
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
+  }
+  cerrarSesion(){
+    this.menu.close();
+    this.nav.setRoot(LoginPage);
   }
 }

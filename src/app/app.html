@@ -12,6 +12,10 @@
       <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
+      <button ion-item (click)="cerrarSesion()">
+        <ion-icon name="close"></ion-icon>
+        Cerrar Sesión
+      </button>
     </ion-list>
   </ion-content>
 

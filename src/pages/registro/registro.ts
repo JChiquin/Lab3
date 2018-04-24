@@ -22,4 +22,8 @@ export class RegistroPage {
     console.log('ionViewDidLoad RegistroPage');
   }
 
+  registrar(){
+  	this.navCtrl.pop();
+  }
+
 }

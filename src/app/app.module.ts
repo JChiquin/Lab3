@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RegistroPage } from '../pages/registro/registro';
 import { InicioPage } from '../pages/inicio/inicio';
+import { FiltrosPage } from '../pages/filtros/filtros';
 @NgModule({
   declarations: [
     MyApp,
@@ -18,7 +19,8 @@ import { InicioPage } from '../pages/inicio/inicio';
     LoginPage,
     CatalogoPage,
     RegistroPage,
-    InicioPage
+    InicioPage,
+    FiltrosPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { InicioPage } from '../pages/inicio/inicio';
     LoginPage,
     CatalogoPage,
     RegistroPage,
-    InicioPage
+    InicioPage,
+    FiltrosPage
   ],
   providers: [
     StatusBar,
