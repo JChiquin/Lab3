@@ -21,6 +21,7 @@ export class CatalogoPage {
     descripcion: string,
     vendedor: string,
     categoria: string,
+    avatar: string,
     fecha: string,
     likes: number,
     comentarios: number
