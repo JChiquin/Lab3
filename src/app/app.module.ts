@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { CatalogoPage } from '../pages/catalogo/catalogo';
+import { PublicacionesPage } from '../pages/publicaciones/publicaciones';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,6 +22,7 @@ import { FiltrosPage } from '../pages/filtros/filtros';
     RegistroPage,
     InicioPage,
     FiltrosPage
+    PublicacionesPage
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { FiltrosPage } from '../pages/filtros/filtros';
     RegistroPage,
     InicioPage,
     FiltrosPage
+    PublicacionesPage
   ],
   providers: [
     StatusBar,
