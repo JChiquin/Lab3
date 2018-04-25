@@ -21,7 +21,7 @@ import { FiltrosPage } from '../pages/filtros/filtros';
     CatalogoPage,
     RegistroPage,
     InicioPage,
-    FiltrosPage
+    FiltrosPage,
     PublicacionesPage
   ],
   imports: [
@@ -36,7 +36,7 @@ import { FiltrosPage } from '../pages/filtros/filtros';
     CatalogoPage,
     RegistroPage,
     InicioPage,
-    FiltrosPage
+    FiltrosPage,
     PublicacionesPage
   ],
   providers: [

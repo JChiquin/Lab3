@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { ModalController } from 'ionic-angular';
 import { FiltrosPage } from '../filtros/filtros';
+import { PublicacionesPage } from '../publicaciones/publicaciones';
 
 /**
  * Generated class for the CatalogoPage page.
@@ -105,6 +106,10 @@ Trabajamos con los bancos: ...`,
   filtrosModal() {
     let modal = this.modalCtrl.create(FiltrosPage);
     modal.present();
+  }
+
+  abrirPublicacion(post){
+    this.navCtrl.push(PublicacionesPage)
   }
   
 

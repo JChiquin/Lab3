@@ -28,7 +28,7 @@
 
 
 <ion-content padding>
-	<ion-card *ngFor="let p of publicaciones">
+	<ion-card *ngFor="let p of publicaciones" (click)="abrirPublicacion(p)" >
   <ion-grid>
     <ion-row>
       <ion-col col-9>
