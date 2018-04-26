@@ -83,8 +83,8 @@ RAM: 16GB RAM DDR3 1866 Soldered  ...`,
       likes: Math.floor(Math.random()*30),
       comentarios: Math.floor(Math.random()*30)
     });
-    this.publicaciones.push({title: "Iphone X 256gb Lte 4g Nuevos Garantía Originales",
-      images: ['assets/imgs/telefono1a.png','assets/imgs/telefono1b.png','assets/imgs/telefono1c.png'],
+    this.publicaciones.push({title: "Iphone X 256gb",
+      images: ['assets/imgs/telefono1b.png', 'assets/imgs/telefono1a.png','assets/imgs/telefono1c.png'],
       precio: Math.floor(Math.random()*10000000+ 100000),
       descripcion: `iPhone X 256Gb LTE 4G 
 Nuevos Originales en caja 
